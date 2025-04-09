@@ -1,0 +1,38 @@
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+  }
+  
+  .calendar-header {
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .calendar-cell {
+    height: 60px;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+  }
+  
+  .calendar-cell.available {
+    background-color: #c7f7c0;
+  }
+  
+  .calendar-cell.unavailable {
+    background-color: #f9cccc;
+    cursor: not-allowed;
+  }
+  
+  .calendar-cell.empty {
+    background-color: transparent;
+    cursor: default;
+  }
+  
+  .response-box {
+    margin-top: 20px;
+  }
+  
